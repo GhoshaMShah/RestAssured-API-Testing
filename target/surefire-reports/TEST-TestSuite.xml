@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="20.294" tests="17" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy/target/test-classes:/Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy/target/classes:/Users/pardypanda/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/pardypanda/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/pardypanda/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/pardypanda/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/pardypanda/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/pardypanda/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/pardypanda/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/pardypanda/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/pardypanda/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/pardypanda/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/pardypanda/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/pardypanda/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/pardypanda/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/pardypanda/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/pardypanda/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/pardypanda/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/pardypanda/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/pardypanda/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/pardypanda/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/pardypanda/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/pardypanda/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/pardypanda/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/Users/pardypanda/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/pardypanda/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/pardypanda/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/pardypanda/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/pardypanda/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/pardypanda/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/pardypanda/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-testng/7.15.0/cucumber-testng-7.15.0.jar:/Users/pardypanda/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/pardypanda/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/pardypanda/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/pardypanda/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/pardypanda/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/pardypanda/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar:/Users/pardypanda/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar:/Users/pardypanda/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy/target/surefire/surefirebooter-20260318130233492_3.jar /Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy/target/surefire 2026-03-18T13-02-33_336-jvmRun1 surefire-20260318130233492_1tmp surefire_0-20260318130233492_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy/target/test-classes:/Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy/target/classes:/Users/pardypanda/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/pardypanda/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/pardypanda/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/pardypanda/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/pardypanda/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/pardypanda/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/pardypanda/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/pardypanda/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/pardypanda/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/pardypanda/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/pardypanda/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/pardypanda/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/pardypanda/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/pardypanda/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/pardypanda/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/pardypanda/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/pardypanda/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/pardypanda/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/pardypanda/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/pardypanda/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/pardypanda/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/pardypanda/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/pardypanda/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/Users/pardypanda/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/pardypanda/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/pardypanda/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/pardypanda/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/pardypanda/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/pardypanda/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/pardypanda/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/pardypanda/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/pardypanda/.m2/repository/io/cucumber/cucumber-testng/7.15.0/cucumber-testng-7.15.0.jar:/Users/pardypanda/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/pardypanda/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/pardypanda/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/pardypanda/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/pardypanda/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/pardypanda/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar:/Users/pardypanda/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar:/Users/pardypanda/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/pardypanda"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy/target/surefire/surefirebooter-20260318130233492_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.11+9-LTS"/>
+    <property name="user.name" value="pardypanda"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.7.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu17.50+19-CA"/>
+    <property name="localRepository" value="/Users/pardypanda/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/var/folders/5h/bw0wmhpj30jf5dsjlgc1n8lm0000gn/T/"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="/Users/pardypanda/Desktop/Ghosha/RestAPI Testing/files copy"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/pardypanda/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="17.0.11+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Login with valid credentials returns token&quot;, &quot;Authentication API&quot;](1)" classname="runner.TestRunner" time="4.542">
+    <system-out><![CDATA[
+@POST @positive @auth
+Scenario: Login with valid credentials returns token       # src/test/resources/features/auth.feature:15
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"            # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /auth/login → 200
+  When I send a POST request to "/auth/login" with body:   # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200              # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'accessToken' exists: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NzM4MTkxNTgsImV4cCI6MTc3MzgyMjc1OH0.N1v5j-L-7vIBWptPJzE09VF7dk8RhZP7iA8cue0lBbo
+  And the response should contain field "accessToken"      # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+✅ Field 'accessToken' is not empty: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NzM4MTkxNTgsImV4cCI6MTc3MzgyMjc1OH0.N1v5j-L-7vIBWptPJzE09VF7dk8RhZP7iA8cue0lBbo
+  And the response field "accessToken" should not be empty # stepdefs.UserStepDefs.verifyFieldNotEmpty(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login with wrong password returns 400&quot;, &quot;Authentication API&quot;](2)" classname="runner.TestRunner" time="0.535">
+    <system-out><![CDATA[
+@POST @negative @auth
+Scenario: Login with wrong password returns 400          # src/test/resources/features/auth.feature:32
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"          # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /auth/login → 400
+  When I send a POST request to "/auth/login" with body: # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 400
+  Then the response status code should be 400            # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'message' exists: Invalid credentials
+  And the response should contain field "message"        # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login with missing password returns 400&quot;, &quot;Authentication API&quot;](3)" classname="runner.TestRunner" time="0.554">
+    <system-out><![CDATA[
+@POST @negative @auth
+Scenario: Login with missing password returns 400        # src/test/resources/features/auth.feature:44
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"          # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /auth/login → 400
+  When I send a POST request to "/auth/login" with body: # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 400
+  Then the response status code should be 400            # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'message' exists: Username and password required
+  And the response should contain field "message"        # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login with missing username returns 400&quot;, &quot;Authentication API&quot;](4)" classname="runner.TestRunner" time="0.517">
+    <system-out><![CDATA[
+@POST @negative @auth
+Scenario: Login with missing username returns 400        # src/test/resources/features/auth.feature:55
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"          # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /auth/login → 400
+  When I send a POST request to "/auth/login" with body: # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 400
+  Then the response status code should be 400            # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'message' exists: Username and password required
+  And the response should contain field "message"        # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Register with valid credentials returns token&quot;, &quot;Authentication API&quot;](5)" classname="runner.TestRunner" time="0.533">
+    <system-out><![CDATA[
+@POST @positive @auth
+Scenario: Register with valid credentials returns token  # src/test/resources/features/auth.feature:70
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"          # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /auth/login → 200
+  When I send a POST request to "/auth/login" with body: # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200            # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'id' exists: 1
+  And the response should contain field "id"             # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+✅ Field 'accessToken' exists: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NzM4MTkxNjIsImV4cCI6MTc3MzgyMjc2Mn0.XPLtPixhoNcL71wSrGe1887fCyrOWHJPQ0vYlrBC2vM
+  And the response should contain field "accessToken"    # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Register without password returns 400&quot;, &quot;Authentication API&quot;](6)" classname="runner.TestRunner" time="0.546">
+    <system-out><![CDATA[
+@POST @negative @auth
+Scenario: Register without password returns 400          # src/test/resources/features/auth.feature:87
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"          # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /auth/login → 400
+  When I send a POST request to "/auth/login" with body: # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 400
+  Then the response status code should be 400            # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'message' exists: Username and password required
+  And the response should contain field "message"        # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get a single user successfully&quot;, &quot;User Management API&quot;](7)" classname="runner.TestRunner" time="0.563">
+    <system-out><![CDATA[
+@GET @positive
+Scenario: Get a single user successfully            # src/test/resources/features/users.feature:15
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"     # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 GET /users/2 → 200
+  When I send a GET request to "/users/2"           # stepdefs.UserStepDefs.sendGetRequest(java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200       # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'email' exists: michael.williams@x.dummyjson.com
+  And the response should contain field "email"     # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+✅ Field 'firstName' exists: Michael
+  And the response should contain field "firstName" # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+✅ Field 'id' = 2
+  And the response field "id" should equal "2"      # stepdefs.UserStepDefs.verifyFieldValue(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get list of users successfully&quot;, &quot;User Management API&quot;](8)" classname="runner.TestRunner" time="0.6">
+    <system-out><![CDATA[
+@GET @positive
+Scenario: Get list of users successfully               # src/test/resources/features/users.feature:23
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"        # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 GET /users?limit=6&skip=0 → 200
+  When I send a GET request to "/users?limit=6&skip=0" # stepdefs.UserStepDefs.sendGetRequest(java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200          # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'users' exists: [{id=1, firstName=Emily, lastName=Johnson, maidenName=Smith, age=29, gender=female, email=emily.johnson@x.dummyjson.com, phone=+81 965-431-3024, username=emilys, password=emilyspass, birthDate=1996-5-30, image=https://dummyjson.com/icon/emilys/128, bloodGroup=O-, height=193.24, weight=63.16, eyeColor=Green, hair={color=Brown, type=Curly}, ip=42.48.100.32, address={address=626 Main Street, city=Phoenix, state=Mississippi, stateCode=MS, postalCode=29112, coordinates={lat=-77.16213, lng=-92.08482}, country=United States}, macAddress=47:fa:41:18:ec:eb, university=University of Wisconsin--Madison, bank={cardExpire=05/28, cardNumber=3693233511855044, cardType=Diners Club International, currency=GBP, iban=GB74MH2UZLR9TRPHYNU8F8}, company={department=Engineering, name=Dooley, Kozey and Cronin, title=Sales Manager, address={address=263 Tenth Street, city=San Francisco, state=Wisconsin, stateCode=WI, postalCode=37657, coordinates={lat=71.81452, lng=-161.15027}, country=United States}}, ein=977-175, ssn=900-590-289, userAgent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36, crypto={coin=Bitcoin, wallet=0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a, network=Ethereum (ERC20)}, role=admin}, {id=2, firstName=Michael, lastName=Williams, maidenName=, age=36, gender=male, email=michael.williams@x.dummyjson.com, phone=+49 258-627-6644, username=michaelw, password=michaelwpass, birthDate=1989-8-10, image=https://dummyjson.com/icon/michaelw/128, bloodGroup=B+, height=186.22, weight=76.32, eyeColor=Red, hair={color=Green, type=Straight}, ip=12.13.116.142, address={address=385 Fifth Street, city=Houston, state=Alabama, stateCode=AL, postalCode=38807, coordinates={lat=22.815468, lng=115.60858}, country=United States}, macAddress=79:15:78:99:60:aa, university=Ohio State University, bank={cardExpire=01/30, cardNumber=3530633803003665, cardType=JCB, currency=USD, iban=DE26362283149158045865}, company={department=Support, name=Spinka - Dickinson, title=Support Specialist, address={address=395 Main Street, city=Los Angeles, state=New Hampshire, stateCode=NH, postalCode=73442, coordinates={lat=79.09833, lng=-119.62485}, country=United States}}, ein=912-602, ssn=108-953-962, userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/97.0.1072.76 Safari/537.36, crypto={coin=Bitcoin, wallet=0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a, network=Ethereum (ERC20)}, role=admin}, {id=3, firstName=Sophia, lastName=Brown, maidenName=, age=43, gender=female, email=sophia.brown@x.dummyjson.com, phone=+81 210-652-2785, username=sophiab, password=sophiabpass, birthDate=1982-11-6, image=https://dummyjson.com/icon/sophiab/128, bloodGroup=O-, height=177.72, weight=52.6, eyeColor=Hazel, hair={color=White, type=Wavy}, ip=214.225.51.195, address={address=1642 Ninth Street, city=Washington, state=Alabama, stateCode=AL, postalCode=32822, coordinates={lat=45.289368, lng=46.832664}, country=United States}, macAddress=12:a3:d3:6f:5c:5b, university=Pepperdine University, bank={cardExpire=10/27, cardNumber=6011212053392887, cardType=Discover, currency=EUR, iban=DE12191213468288004835}, company={department=Research and Development, name=Schiller - Zieme, title=Accountant, address={address=1896 Washington Street, city=Dallas, state=Nevada, stateCode=NV, postalCode=88511, coordinates={lat=20.086742, lng=-34.577106}, country=United States}}, ein=963-113, ssn=638-461-822, userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36, crypto={coin=Bitcoin, wallet=0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a, network=Ethereum (ERC20)}, role=admin}, {id=4, firstName=James, lastName=Davis, maidenName=, age=46, gender=male, email=james.davis@x.dummyjson.com, phone=+49 614-958-9364, username=jamesd, password=jamesdpass, birthDate=1979-5-4, image=https://dummyjson.com/icon/jamesd/128, bloodGroup=AB+, height=193.31, weight=62.1, eyeColor=Amber, hair={color=Blonde, type=Straight}, ip=101.118.131.66, address={address=238 Jefferson Street, city=Seattle, state=Pennsylvania, stateCode=PA, postalCode=68354, coordinates={lat=16.782513, lng=-139.34723}, country=United States}, macAddress=10:7d:df:1f:97:58, university=University of Southern California, bank={cardExpire=07/30, cardNumber=5303440212268149, cardType=Mastercard, currency=CAD, iban=DE01300746880579852937}, company={department=Support, name=Pagac and Sons, title=Research Analyst, address={address=1622 Lincoln Street, city=Fort Worth, state=Pennsylvania, stateCode=PA, postalCode=27768, coordinates={lat=54.91193, lng=-79.49833}, country=United States}}, ein=904-810, ssn=116-951-314, userAgent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36, crypto={coin=Bitcoin, wallet=0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a, network=Ethereum (ERC20)}, role=admin}, {id=5, firstName=Emma, lastName=Miller, maidenName=Johnson, age=31, gender=female, email=emma.miller@x.dummyjson.com, phone=+91 759-776-1614, username=emmaj, password=emmajpass, birthDate=1994-6-13, image=https://dummyjson.com/icon/emmaj/128, bloodGroup=AB-, height=192.8, weight=63.62, eyeColor=Green, hair={color=White, type=Straight}, ip=224.126.22.183, address={address=607 Fourth Street, city=Jacksonville, state=Colorado, stateCode=CO, postalCode=26593, coordinates={lat=0.505589, lng=-157.43282}, country=United States}, macAddress=32:b9:7e:8d:f5:e8, university=Northeastern University, bank={cardExpire=07/30, cardNumber=5237188057591130, cardType=Mastercard, currency=NZD, iban=DE19182355652037133559}, company={department=Human Resources, name=Graham - Gulgowski, title=Quality Assurance Engineer, address={address=1460 Sixth Street, city=San Antonio, state=Idaho, stateCode=ID, postalCode=21965, coordinates={lat=44.346546, lng=-26.9447}, country=United States}}, ein=403-505, ssn=526-210-885, userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0, crypto={coin=Bitcoin, wallet=0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a, network=Ethereum (ERC20)}, role=admin}, {id=6, firstName=Olivia, lastName=Wilson, maidenName=, age=23, gender=female, email=olivia.wilson@x.dummyjson.com, phone=+91 607-295-6448, username=oliviaw, password=oliviawpass, birthDate=2002-4-20, image=https://dummyjson.com/icon/oliviaw/128, bloodGroup=B+, height=182.61, weight=58, eyeColor=Hazel, hair={color=Gray, type=Curly}, ip=249.178.112.207, address={address=547 First Street, city=Fort Worth, state=Tennessee, stateCode=TN, postalCode=83843, coordinates={lat=75.32627, lng=-26.15285}, country=United States}, macAddress=9c:7f:ea:34:18:19, university=University of North Carolina--Chapel Hill, bank={cardExpire=06/30, cardNumber=376320072452632, cardType=American Express, currency=NZD, iban=DE21153814367894194071}, company={department=Product Management, name=Pfannerstill Inc, title=Research Analyst, address={address=425 Sixth Street, city=Indianapolis, state=Oklahoma, stateCode=OK, postalCode=74263, coordinates={lat=74.98664, lng=-132.91689}, country=United States}}, ein=921-709, ssn=836-772-168, userAgent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15, crypto={coin=Bitcoin, wallet=0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a, network=Ethereum (ERC20)}, role=moderator}]
+  And the response should contain field "users"        # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+✅ Array 'users' has 6 items
+  And the response array "users" should not be empty   # stepdefs.UserStepDefs.verifyArrayNotEmpty(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get users on page 2&quot;, &quot;User Management API&quot;](9)" classname="runner.TestRunner" time="0.538">
+    <system-out><![CDATA[
+@GET @positive
+Scenario: Get users on page 2                          # src/test/resources/features/users.feature:30
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"        # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 GET /users?limit=6&skip=6 → 200
+  When I send a GET request to "/users?limit=6&skip=6" # stepdefs.UserStepDefs.sendGetRequest(java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200          # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Array 'users' has 6 items
+  And the response array "users" should not be empty   # stepdefs.UserStepDefs.verifyArrayNotEmpty(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get a non-existent user returns 404&quot;, &quot;User Management API&quot;](10)" classname="runner.TestRunner" time="0.595">
+    <system-out><![CDATA[
+@GET @negative
+Scenario: Get a non-existent user returns 404   # src/test/resources/features/users.feature:40
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com" # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 GET /users/0 → 404
+  When I send a GET request to "/users/0"       # stepdefs.UserStepDefs.sendGetRequest(java.lang.String)
+✅ Status code: 404
+  Then the response status code should be 404   # stepdefs.UserStepDefs.verifyStatusCode(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get users on non-existent page returns empty list&quot;, &quot;User Management API&quot;](11)" classname="runner.TestRunner" time="0.502">
+    <system-out><![CDATA[
+@GET @negative
+Scenario: Get users on non-existent page returns empty list # src/test/resources/features/users.feature:45
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"             # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 GET /users?limit=6&skip=9999 → 200
+  When I send a GET request to "/users?limit=6&skip=9999"   # stepdefs.UserStepDefs.sendGetRequest(java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200               # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Array 'users' is empty as expected
+  And the response array "users" should be empty            # stepdefs.UserStepDefs.verifyArrayEmpty(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Create a new user successfully&quot;, &quot;User Management API&quot;](12)" classname="runner.TestRunner" time="0.52">
+    <system-out><![CDATA[
+@POST @positive
+Scenario: Create a new user successfully                     # src/test/resources/features/users.feature:55
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"              # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /users/add → 201
+  When I send a POST request to "/users/add" with body:      # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 201
+  Then the response status code should be 201                # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'id' exists: 209
+  And the response should contain field "id"                 # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+✅ Field 'firstName' = Alice QA
+  And the response field "firstName" should equal "Alice QA" # stepdefs.UserStepDefs.verifyFieldValue(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Create another user with different role&quot;, &quot;User Management API&quot;](13)" classname="runner.TestRunner" time="0.511">
+    <system-out><![CDATA[
+@POST @positive
+Scenario: Create another user with different role       # src/test/resources/features/users.feature:69
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"         # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /users/add → 201
+  When I send a POST request to "/users/add" with body: # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 201
+  Then the response status code should be 201           # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'id' exists: 209
+  And the response should contain field "id"            # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Create user with empty body&quot;, &quot;User Management API&quot;](14)" classname="runner.TestRunner" time="0.49">
+    <system-out><![CDATA[
+@POST @negative
+Scenario: Create user with empty body                   # src/test/resources/features/users.feature:86
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"         # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 POST /users/add → 201
+  When I send a POST request to "/users/add" with body: # stepdefs.UserStepDefs.sendPostRequest(java.lang.String,java.lang.String)
+✅ Status code: 201
+  Then the response status code should be 201           # stepdefs.UserStepDefs.verifyStatusCode(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Full update of a user successfully&quot;, &quot;User Management API&quot;](15)" classname="runner.TestRunner" time="0.542">
+    <system-out><![CDATA[
+@PUT @positive
+Scenario: Full update of a user successfully                     # src/test/resources/features/users.feature:98
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"                  # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 PUT /users/2 → 200
+  When I send a PUT request to "/users/2" with body:             # stepdefs.UserStepDefs.sendPutRequest(java.lang.String,java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200                    # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'firstName' = Updated Name
+  And the response field "firstName" should equal "Updated Name" # stepdefs.UserStepDefs.verifyFieldValue(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Partial update of a user successfully&quot;, &quot;User Management API&quot;](16)" classname="runner.TestRunner" time="0.526">
+    <system-out><![CDATA[
+@PATCH @positive
+Scenario: Partial update of a user successfully        # src/test/resources/features/users.feature:114
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"        # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 PATCH /users/2 → 200
+  When I send a PATCH request to "/users/2" with body: # stepdefs.UserStepDefs.sendPatchRequest(java.lang.String,java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200          # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'lastName' exists: Senior QA Engineer
+  And the response should contain field "lastName"     # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Delete an existing user successfully&quot;, &quot;User Management API&quot;](17)" classname="runner.TestRunner" time="0.491">
+    <system-out><![CDATA[
+@DELETE @positive
+Scenario: Delete an existing user successfully      # src/test/resources/features/users.feature:129
+✅ Base URL set to: https://dummyjson.com
+  Given the base URL is "https://dummyjson.com"     # stepdefs.UserStepDefs.setBaseUrl(java.lang.String)
+📡 DELETE /users/2 → 200
+  When I send a DELETE request to "/users/2"        # stepdefs.UserStepDefs.sendDeleteRequest(java.lang.String)
+✅ Status code: 200
+  Then the response status code should be 200       # stepdefs.UserStepDefs.verifyStatusCode(int)
+✅ Field 'isDeleted' exists: true
+  And the response should contain field "isDeleted" # stepdefs.UserStepDefs.verifyFieldExists(java.lang.String)
+]]></system-out>
+  </testcase>
+</testsuite>
