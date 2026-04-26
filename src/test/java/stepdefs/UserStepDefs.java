@@ -17,7 +17,7 @@ public class UserStepDefs {
     public void setBaseUrl(String url) {
         RestAssured.baseURI = url;
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
-        System.out.println("✅ Base URL set to: " + url);
+        System.out.println("Base URL set to: " + url);
     }
 
     // ── GET ───────────────────────────────────────────────────────────────────
@@ -30,7 +30,7 @@ public class UserStepDefs {
         .then()
             .extract().response();
 
-        System.out.println("📡 GET " + endpoint + " → " + response.statusCode());
+        System.out.println("GET " + endpoint + " → " + response.statusCode());
     }
 
     // ── POST ──────────────────────────────────────────────────────────────────
@@ -44,7 +44,7 @@ public class UserStepDefs {
         .then()
             .extract().response();
 
-        System.out.println("📡 POST " + endpoint + " → " + response.statusCode());
+        System.out.println("POST " + endpoint + " → " + response.statusCode());
     }
 
     // ── PUT ───────────────────────────────────────────────────────────────────
@@ -58,7 +58,7 @@ public class UserStepDefs {
         .then()
             .extract().response();
 
-        System.out.println("📡 PUT " + endpoint + " → " + response.statusCode());
+        System.out.println("PUT " + endpoint + " → " + response.statusCode());
     }
 
     // ── PATCH ─────────────────────────────────────────────────────────────────
@@ -85,7 +85,7 @@ public class UserStepDefs {
         .then()
             .extract().response();
 
-        System.out.println("📡 DELETE " + endpoint + " → " + response.statusCode());
+        System.out.println("DELETE " + endpoint + " → " + response.statusCode());
     }
 
     // ════════════════════════════════════════════════════════════════════════
@@ -97,7 +97,7 @@ public class UserStepDefs {
         int actual = response.statusCode();
         Assert.assertEquals(actual, expectedStatusCode,
             "❌ Expected status " + expectedStatusCode + " but got " + actual);
-        System.out.println("✅ Status code: " + actual);
+        System.out.println("Status code: " + actual);
     }
 
     @And("the response should contain field {string}")
@@ -105,7 +105,7 @@ public class UserStepDefs {
         Object value = response.jsonPath().get(fieldPath);
         Assert.assertNotNull(value,
             "❌ Expected field '" + fieldPath + "' to exist but was null");
-        System.out.println("✅ Field '" + fieldPath + "' exists: " + value);
+        System.out.println("Field '" + fieldPath + "' exists: " + value);
     }
 
     @And("the response field {string} should equal {string}")
@@ -114,7 +114,7 @@ public class UserStepDefs {
         String actual = (raw == null) ? "null" : String.valueOf(raw);
         Assert.assertEquals(actual, expected,
             "❌ Field '" + fieldPath + "' expected '" + expected + "' got '" + actual + "'");
-        System.out.println("✅ Field '" + fieldPath + "' = " + actual);
+        System.out.println("Field '" + fieldPath + "' = " + actual);
     }
 
     @And("the response field {string} should not be empty")
@@ -125,7 +125,7 @@ public class UserStepDefs {
             value.isEmpty() || value.equals("null"),
             "❌ Field '" + fieldPath + "' should not be empty"
         );
-        System.out.println("✅ Field '" + fieldPath + "' is not empty: " + value);
+        System.out.println("Field '" + fieldPath + "' is not empty: " + value);
     }
 
     @And("the response array {string} should not be empty")
@@ -133,7 +133,7 @@ public class UserStepDefs {
         java.util.List<?> list = response.jsonPath().getList(fieldPath);
         Assert.assertNotNull(list, "❌ Array '" + fieldPath + "' is null");
         Assert.assertFalse(list.isEmpty(), "❌ Array '" + fieldPath + "' is empty");
-        System.out.println("✅ Array '" + fieldPath + "' has " + list.size() + " items");
+        System.out.println("Array '" + fieldPath + "' has " + list.size() + " items");
     }
 
     @And("the response array {string} should be empty")
@@ -141,7 +141,7 @@ public class UserStepDefs {
         java.util.List<?> list = response.jsonPath().getList(fieldPath);
         Assert.assertNotNull(list, "❌ Array '" + fieldPath + "' is null");
         Assert.assertTrue(list.isEmpty(), "❌ Array '" + fieldPath + "' should be empty");
-        System.out.println("✅ Array '" + fieldPath + "' is empty as expected");
+        System.out.println("Array '" + fieldPath + "' is empty as expected");
     }
 
     @And("the response body should be empty")
@@ -151,6 +151,6 @@ public class UserStepDefs {
             body == null || body.trim().isEmpty(),
             "❌ Expected empty body but got: " + body
         );
-        System.out.println("✅ Response body is empty");
+        System.out.println("Response body is empty");
     }
 }
